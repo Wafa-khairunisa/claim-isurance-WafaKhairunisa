@@ -21,14 +21,12 @@ region = st.text_input('Agama')
 
 charges = st.text_input('Biaya Asuransi')
 
-insuranceclaim = st.text_input('Klaim atau Tidak')
-
 # code untuk kelompok nasabah
 insurance2_claim = ''
 
 # membuat tombol untuk prediksi
 if st.button('Test Prediksi'):
-    ins_prediction = insurance2_model.predict([[age, sex, bmi, children, smoker, region, charges, insuranceclaim]])
+    ins_prediction = insurance2_model.predict([[age, sex, bmi, children, smoker, region, charges]])
     
     if(ins_prediction[0] == 1):
         insurance2_claim = 'Nasabah Mengklaim Asuransi'
