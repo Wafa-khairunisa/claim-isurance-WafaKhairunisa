@@ -19,7 +19,7 @@ smoker = st.text_input('Merokok atau tidak')
 
 region = st.text_input('Agama')
 
-charges = st.text_input('Biaya')
+charges = st.text_input('Biaya Asuransi')
 
 insuranceclaim = st.text_input('Klaim atau Tidak')
 
